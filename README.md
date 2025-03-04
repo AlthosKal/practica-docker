@@ -13,7 +13,7 @@ docker pull nginx
 ```
 
 Salida:
-[Salida del comando](./images/img1.png)
+![Salida del comando](./images/img1.png)
 
 ---
 
@@ -26,7 +26,7 @@ docker images
 ```
 
 Salida:
-[Salida del comando](./images/img2.png)
+![Salida del comando](./images/img2.png)
 
 ---
 
@@ -55,7 +55,7 @@ docker images python
 ```
 
 Salida:
-[Salida del comando](./images/img3.png)
+![Salida del comando](./images/img3.png)
 
 ---
 
@@ -76,7 +76,7 @@ docker run --rm python:3.7 python --version
 ```
 
 Salida:
-[Salida del comando](./images/img4.png)
+![Salida del comando](./images/img4.png)
 
 ---
 
@@ -87,10 +87,6 @@ Comando:
 ```bash
 docker images
 ```
-
-Salida:
-[Salida del comando](./images/img5.png)
-
 ---
 
 #### **3.2 Eliminar la imagen de Python 3.7**
@@ -98,10 +94,6 @@ Comando:
 ```bash
 docker rmi python:3.7
 ```
-
-Salida:
-[Salida del comando](./images/img6.png)
-
 ---
 
 #### **3.3 Verificar la eliminación**
@@ -111,7 +103,7 @@ docker images python
 ```
 
 Salida:
-[Salida del comando](./images/img7.png)
+![Salida del comando](./images/img5.png)
 
 ---
 
@@ -124,7 +116,7 @@ docker inspect --format='{{.RootFS.Layers}}' nginx
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img6.png)
 
 ---
 
@@ -147,7 +139,7 @@ Salida:
    ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img7.png)
 
 ---
 
@@ -160,8 +152,7 @@ docker search nginx
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
-
+![Salida del comando](./images/img8.png)
 ---
 
 #### **5.2 Buscar imágenes de Python**
@@ -171,7 +162,7 @@ docker search python
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img9.png)
 
 ---
 
@@ -208,7 +199,7 @@ docker images nginx
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img10.png)
 
 ---
 
@@ -245,7 +236,7 @@ docker ps
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img11.png)
 
 ---
 
@@ -284,7 +275,7 @@ docker ps -a
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img12.png)
 
 ---
 
@@ -329,7 +320,7 @@ docker rm ubuntu-interactive
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img13.png)
 
 ---
 
@@ -596,7 +587,7 @@ docker port nginx-with-port
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img14.png)
 
 ---
 
@@ -697,7 +688,7 @@ docker logs --tail 10 nginx-detached
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img15.png)
 
 ---
 
@@ -937,7 +928,7 @@ cat nginx.conf
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img16.png)
 
 ---
 
@@ -982,7 +973,7 @@ docker exec env-file-test env | grep -E "ANOTHER_VAR|YET_ANOTHER_VAR"
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img17.png)
 
 ---
 
@@ -1011,7 +1002,7 @@ docker inspect -f '{{.HostConfig.NanoCpus}}' limited-nginx
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img18.png)
 
 ---
 
@@ -1022,7 +1013,7 @@ docker stats limited-nginx
 ```
 
 Salida:
-[Salida del comando](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img19.png)
 
 ---
 
@@ -1065,7 +1056,7 @@ Se ejecuta el comando `docker pull alpine` para descargar la imagen oficial de A
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del resultado de `docker pull alpine`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img20.png)
 
 **Descripción:**  
 El comando descarga la imagen `alpine:latest` y muestra el progreso de la descarga, incluyendo las capas de la imagen.
@@ -1083,7 +1074,7 @@ Se ejecuta el comando `docker run` para iniciar un contenedor interactivo basado
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del resultado de `docker run -it --name alpine_container alpine /bin/sh`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img21.png)
 
 **Descripción:**  
 El contenedor se inicia correctamente y se abre una shell interactiva dentro del contenedor. Se puede ejecutar comandos como `ls -a` para explorar el sistema de archivos del contenedor.
@@ -1157,7 +1148,7 @@ Se descarga la imagen `hello-world` y se ejecuta un contenedor basado en ella. L
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del mensaje "Hello from Docker!"](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img22.png)
 
 **Descripción:**  
 El contenedor muestra el mensaje "Hello from Docker!", confirmando que Docker está correctamente instalado y funcionando.
@@ -1177,7 +1168,7 @@ Se descarga la imagen `nginx` y se ejecuta un contenedor en modo separado, mapea
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del servidor Nginx en ejecución](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img23.png)
 
 **Descripción:**  
 El comando `docker ps` muestra que el contenedor Nginx está en ejecución. Además, se accede a la página de bienvenida de Nginx a través del navegador.
@@ -1221,7 +1212,7 @@ Se ejecuta el comando para listar todos los contenedores, incluyendo los que est
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de la lista de contenedores](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img25.png)
 
 **Descripción:**  
 El comando muestra una lista de todos los contenedores con detalles como ID, nombres, estado y puertos.
@@ -1476,7 +1467,7 @@ Se ejecuta el comando para listar solo los ID de todos los contenedores, incluye
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de la lista de ID de contenedores](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img26.png)
 
 **Descripción:**  
 El comando muestra una lista de los ID de todos los contenedores, lo que permite identificar contenedores ocultos o detenidos.
@@ -1487,7 +1478,7 @@ El comando muestra una lista de los ID de todos los contenedores, lo que permite
 
 ### **3.1 Resultados Obtenidos**
 - Se listaron todos los contenedores, incluyendo los que están en ejecución y los detenidos.
-- Se inspeccionaron los detalles de un contenedor específico ("jenkins"), obteniendo información detallada sobre su configuración y estado.
+- Se inspeccionaron los detalles de un contenedor específico ("nginx-detached"), obteniendo información detallada sobre su configuración y estado.
 - Se identificaron los ID de todos los contenedores, incluyendo aquellos que no están visibles en la lista normal.
 
 ### **3.2 Análisis**
@@ -1538,7 +1529,7 @@ Se ejecuta el comando para filtrar y listar solo los contenedores en ejecución 
 **Captura del Resultado:**
 Se encuentra en la siguiente captura
 **Descripción:**  
-El comando muestra únicamente los contenedores en ejecución que coinciden con el nombre "jenkins".
+El comando muestra únicamente los contenedores en ejecución que coinciden con el nombre "nginx-detached".
 
 ---
 
@@ -1553,7 +1544,7 @@ Se ejecuta el comando para listar todos los contenedores, tanto los que están e
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de la lista completa de contenedores](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img27.png)
 
 **Descripción:**  
 El comando muestra una lista de todos los contenedores, incluyendo su estado actual (en ejecución o detenido).
@@ -1597,7 +1588,7 @@ Se ejecuta el comando para crear un contenedor MariaDB con la variable de entorn
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenedor MariaDB en ejecución](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img28.png)
 
 **Descripción:**  
 El comando `docker ps` muestra que el contenedor `some-mariadb` está en ejecución y expone el puerto 3306.
@@ -1634,7 +1625,7 @@ Se accede al contenedor y se inicia sesión en MariaDB utilizando la variable de
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de la sesión en MariaDB](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img29.png)
 
 **Descripción:**  
 El comando permite acceder a la base de datos MariaDB dentro del contenedor.
@@ -1647,7 +1638,7 @@ El comando permite acceder a la base de datos MariaDB dentro del contenedor.
 docker rm -f some-mariadb
 docker run -d -p 3306:3306 --name some-mariadb -e MYSQL_ROOT_PASSWORD=root mariadb
 docker ps
-mariadb -u root -p -h 127.0.0.1
+mariadb -u root -p -h 172.17.0.4
 ```
 
 **Descripción:**  
@@ -1655,7 +1646,7 @@ Se elimina el contenedor anterior, se crea uno nuevo con mapeo de puertos y se a
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de la conexión a MariaDB desde el exterior](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img30.png)
 
 **Descripción:**  
 El comando `mariadb` permite conectarse a la base de datos MariaDB desde el equipo anfitrión utilizando el puerto mapeado.
@@ -1700,7 +1691,7 @@ Se ejecuta el comando `docker ps` para listar los contenedores en ejecución y s
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido de `container.txt` y `container_format.txt`](ruta o direccion a la imagen "Salida")
+Se encuentra en la siguiente imagen 
 
 **Descripción:**  
 El archivo `container.txt` contiene la lista completa de contenedores en ejecución, mientras que `container_format.txt` muestra solo el ID, nombres y estado de los contenedores.
@@ -1714,7 +1705,7 @@ docker ps --format "{{.ID}}: {{.Image}}: {{.Names}}: {{.Ports}}: {{.CreatedAt}}:
 ```
 
 **Captura de la Ejecución:**
-[Captura del comando personalizado `docker ps`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img31.png)
 
 **Descripción:**  
 Se ejecuta el comando `docker ps` con un formato personalizado para mostrar detalles adicionales como ID, imagen, nombres, puertos, fecha de creación y estado, y se guarda en `container_details.txt`.
@@ -1785,7 +1776,7 @@ Se ejecutan los comandos para descargar las imágenes `alpine` y `ubuntu` desde 
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura de las imágenes `alpine` y `ubuntu` descargadas](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img32.png)
 
 **Descripción:**  
 El comando `docker images` muestra que las imágenes `alpine` y `ubuntu` han sido descargadas correctamente, incluyendo detalles como sus etiquetas y tamaños.
@@ -1849,7 +1840,7 @@ Se descarga la imagen `alpine` desde Docker Hub y se ejecuta un contenedor en mo
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenedor Alpine en ejecución](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img33.png)
 
 **Descripción:**  
 El comando `docker ps` muestra que el contenedor `alpine-container` está en ejecución.
@@ -1910,7 +1901,7 @@ Se ejecuta el comando `docker ps` con un filtro para listar solo los contenedore
 
 #### **Resultado Obtenido:**
 **Captura del Resultado:**
-[Captura del contenido de `container_jenkins.txt`](ruta o direccion a la imagen "Salida")
+![Salida del comando](./images/img34.png)
 
 **Descripción:**  
 El archivo `container_jenkins.txt` contiene una lista de los contenedores en ejecución que utilizan la imagen `jenkins/jenkins`, con sus ID, imágenes y nombres.
